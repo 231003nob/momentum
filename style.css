@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    /* bgImage경로는 랜덤으로 변경하는 요소 때문에 JS에 있음. */
+    /* veiwport height */
+    background: center center fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'ghanachoco';
+    color : rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+}
+
+#clock {
+    color : rgba(0, 0, 0, 0.8);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 120px;
+    text-shadow: 0px 0px 45px rgba(255, 255, 255, 0.6);
+    font-weight: 900;
+}
+
+
+
+#todo-form {
+    display : inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    /* width: 500px;
+    height: 50px; */
+}
+
+#todo-form:focus {
+    font-size: 28px;
+    outline: none;
+
+} 
+
+
+#todo-form-input {
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'ghanachoco';
+    background: none;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    transition: all 150ms ease-in-out;    
+    width: 500px;
+    height: 50px;
+
+    display: flex;
+    flex-grow: 9;
+}
+
+#todo-form-input:focus {
+    font-size: 28px;
+    outline: none;
+    width: 700px;
+    height: 65px;
+
+} 
+
+.input-icon{
+    display: flex;
+    flex-grow: 1;
+    height: 30px;
+    width : 30px;
+    margin-right: 10px;
+    align-self: center;
+    filter: drop-shadow(0px 0px 5px #000); 
+}
+
+/* 인풋의 플레이스홀더 속성을 가상 선택자로 지정 */
+#todo-form > input::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 100;
+    transition: all 150ms ease-in-out;    
+
+}
+/* [포커스시] 인풋 속성을 가상 선택자로 지정 */
+#todo-form > input:focus::-webkit-input-placeholder  {
+    opacity: 0;
+}
+
+#todo-list > li {
+    list-style-type: none;
+}
+
+#quote-wrap {
+    width: 100%;
+    text-align: center;
+    position : fixed;   
+    bottom : 5%;
+}
+
+#quote {
+    display: inline-block;
+}
+
+
+/* 클래스에 대한 속성 지정은 닷(.) 으로 하는구나 */
+.active {
+    color: tomato;
+}
+
+.hidden {
+    display: none;
+}

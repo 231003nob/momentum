@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" >
+    <title>Momentum</title>
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+        />
+        <button>Log In</button>
+    </form>  
+    <h2 id="clock">00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <!-- <div id="form-div"> -->
+    <form id ="todo-form">
+        <input id="todo-form-input" type="text" placeholder="오늘은 어떤일을 해볼까요?" required autocomplete="off">
+            <img src="img/Pencil_w.png" class="input-icon"/>
+        </input>
+    </form>
+<!-- </div> -->
+    <ul id="todo-list"></ul>
+    <div id="quote-wrap">
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
+</body>
+</html> 
